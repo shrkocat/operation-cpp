@@ -42,7 +42,7 @@ do {
 				
 			count = 0;
 							
-			// Input a number for Case 3 please :)	
+			// Input a number for Case 1 please :)	
 			cout << "Enter a Number: ";
 			cin >> num;
 				

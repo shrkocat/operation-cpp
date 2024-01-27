@@ -1,0 +1,5 @@
+# Operation Menu
+This program is an operation menu coded in ***C++*** that is tasked to prompt the user to make choice and input a valid number to use whether to determine if a number is prime or not (**2 - is a prime number**); the size of a right triangle (**that is displayed as numbers**); display the number/s of the fibonacci series (**if input is 6, display "1, 1, 2, 3, 5, 8"**); and solve the factorial of a number by also stating the solution (**if input is 5, display "the factorial of 5*4*3*2*1 is 120"**). Where the user is also given the choice to close the program upon selection or return to the main menu.
+
+## C++
+This program does looping statements specifically **do-while** loops to confirm the choice of the user whether it is a valid input or not. If it is valid, then certain operations are executed such as commiting to a **switch case** statement where it has specific algorithms. The program also utilizes **for** looping statements, a control flow statement that is used to execute a piece of code based on the validity of some conditions. It makes the code execute repeatedly.

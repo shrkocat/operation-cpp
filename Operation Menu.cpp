@@ -7,12 +7,12 @@ using namespace std;
 int main()
 {
     // Declare
-	int value;
-	string choice;
+    int value;
+    string choice;
 	
-	do {
-		system("cls");
-	// Decision to do process || Main Menu
+do {
+     system("cls");
+    // Decision to do process || Main Menu
     cout << "****************MENU****************" << endl;
     cout << "[1] PRIME NUMBER                    " << endl;
     cout << "[2] RIGHT TRIANGLE                  " << endl;
@@ -21,20 +21,20 @@ int main()
     cout << "[5] EXIT                            " << endl;
     cout << "************************************" << endl;
     
-    	do { // Selection (1-5) to commit operations
-			cout << "ENTER YOUR CHOICE: ";
+    do { // Selection (1-5) to commit operations
+		cout << "ENTER YOUR CHOICE: ";
 	    	cin >> value;
 			
-			if (value < 1 || value > 5)
-			{
-				cout << "Invalid number, enter again" << endl;
-			}
-		} while (value < 1 || value > 5);
+		if (value < 1 || value > 5)
+		{
+			cout << "Invalid number, enter again" << endl;
+		}
+	} while (value < 1 || value > 5);
 		
 	
 	// Switch Case Operations
-
 	switch(value){
+		
 		case 1: // THe Prime Number
 			{
 				// Declare for Case 1
@@ -42,7 +42,7 @@ int main()
 				
 				count = 0;
 						
-			do{
+			do {
 				// Input a number for Case 1	
 				cout << "Enter a Number: ";
 				cin >> num;
@@ -51,7 +51,7 @@ int main()
 				{
 					cout << "Invalid number, enter again" << endl;
 				}
-			} while (num <= 0);
+			   } while (num <= 0);
 				
 				
 				// Execution for Case 1
@@ -76,12 +76,12 @@ int main()
 			} break;
 			
 		case 2: // The Right Triangle
-            {
-                // Declare for Case 2
-                int num, iRow, iCol;
+            		{
+                		// Declare for Case 2
+                		int num, iRow, iCol;
                 
-            do{
-            	// Input a number for Case 2
+            		do {
+            			// Input a number for Case 2
 				cout << "Enter the Size of Right Triangle: ";
 				cin >> num;
 				
@@ -89,22 +89,22 @@ int main()
 				{
 					cout << "Invalid size, enter again" << endl;
 				}
-			} while (num <= 0);
+			   } while (num <= 0);
   
-                // Execution for Case 2
-                for (iRow = 1; iRow <= num; iRow++)
-                {
-                    for (iCol = 1; iCol <= num; iCol++)
-                    {
-                        // Output for Case 2
-                        if (iCol <= iRow)
-                            cout << setw(3) << iCol;
-                        else
-                            cout << setw(3) << " ";
-                    }
-                    cout << endl;
-                }
-            } break;
+                		// Execution for Case 2
+               			for (iRow = 1; iRow <= num; iRow++)
+               			{
+                    			for (iCol = 1; iCol <= num; iCol++)
+                    			{
+                        		// Output for Case 2
+                        			if (iCol <= iRow)
+                            				cout << setw(3) << iCol;
+                        			else
+                            				cout << setw(3) << " ";
+                    			}
+                    			cout << endl;
+                		}
+           		} break;
             
 		case 3: // The Fibonacci Series
 			{
@@ -114,7 +114,7 @@ int main()
 				given1 = 1;
 				given2 = 1;
 			
-			do{
+			do {
 				// Input a number for Case 3
 				cout << "Enter a Number: ";
 				cin >> num;
@@ -123,12 +123,12 @@ int main()
 				{
 					cout << "Invalid number, enter again" << endl;
 				}
-			} while (num <= 0);
+			   } while (num <= 0);
 				
 				// Execution for Case 3
 				for (i = 0; i < num; i++)
 				{
-				    // Ouput for Case 3
+				    	// Ouput for Case 3
 					cout << given1 << setw(3);
 					
 					fiboNum = given1 + given2;
@@ -139,43 +139,43 @@ int main()
 			} break;
 			
 		case 4: // The Factorial
-		    {
-		        // Declare for Case 4
-		        int num, i, prod;
+		        {
+		        	// Declare for Case 4
+		        	int num, i, prod;
 		        
-		        prod = 1;
+		        	prod = 1;
 		        
-		    do{
-		    	// Input a number for Case 4
-		        cout << "Enter a Number: ";
+		    	do {
+		    		// Input a number for Case 4
+		        	cout << "Enter a Number: ";
 				cin >> num;
 				
 				if (num <= 0)
 				{
 					cout << "Invalid number, enter again" << endl;
 				}
-			} while (num <= 0);
+			   } while (num <= 0);
 		        
-		        cout << "Factorial of ";
+		        	cout << "Factorial of ";
 		        
-		        // Execution for Case 4
-		        for (i = num; i >= 1; --i)
-		        {
-		            prod *= i;
+		        	// Execution for Case 4
+		        	for (i = num; i >= 1; --i)
+		        	{
+		            		prod *= i;
 		            
-		            // Ouput for Case 4
-		            if (i > 1)
-		            {
-		                cout << i << "*";
-		            }
+		            		// Ouput for Case 4
+		            		if (i > 1)
+		            		{
+		                		cout << i << "*";
+		            		}
 		            
-		            else
-		            {
-		                cout << i;
-		            }
-		        }
-		        cout << " is " << prod << endl;
-		    } break;
+		           	 	else
+		            		{
+		                		cout << i;
+		            		}
+		        	}
+		        	cout << " is " << prod << endl;
+		        } break;
 		    
 		case 5:
 			{
